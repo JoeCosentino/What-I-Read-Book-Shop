@@ -1,4 +1,8 @@
-CREATE TABLE book (
+DROP TABLE IF EXISTS books
+
+CREATE TABLE books (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(150) NOT NULL
+    title VARCHAR(50) NOT NULL,
+    description VARCHAR(260) NOT NULL,
+    cover VARCHAR(50)
 );
